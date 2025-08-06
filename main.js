@@ -37,10 +37,9 @@ startBtn.addEventListener("click", function() {
                     firstMenu.classList.add("none");
                     loading.classList.add("flex");
                     loading.classList.add("load");
-                    double2.classList.remove("none");
-                    double2.classList.add("flex");
-                    now1.classList.remove("none");
-                    now1.classList.add("flex");
+                    double2.style.display = "flex"
+                    now1.classList.remove("none")
+                    now1.style.display = "flex"
                     firstMenu.removeEventListener("animationend", handleAnim);
                     resolve();
                 });
@@ -182,8 +181,7 @@ startBtn.addEventListener("click", function() {
                 loading.classList.remove("flex");
                 loading.classList.add("none");
                 divBtnInp.classList.remove("none");
-                double2.classList.remove("flex")
-                double2.classList.add("none")
+                double2.style.display = "none"
                 startBtn.disabled = false;
             }, 1);
         }

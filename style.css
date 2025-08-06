@@ -83,7 +83,6 @@ body {
 
 .logo p {
     margin: 5px;
-
 }
 
 #logo img {
@@ -260,19 +259,22 @@ body {
     }
 }
 
-
+.vav {
+    display: flex;
+}
 
 .parent {
   display: flex;
-  gap: 20px; /* Відстань між блоками */
+  flex-direction: column;
   justify-content: center;
-  align-items: end;
-  height: 50%;
+  align-items: center;
+  height: 100%;
   margin: 3vh;
+  gap: 6px;
 }
 
 .div1 {
-  width: 60vh;
+  width: 40vh;
   height: 50vh;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
@@ -282,10 +284,11 @@ body {
   box-shadow: 1px 1px 20px #000000;
   padding: 10px;
   overflow: auto;
+  margin: 1vh;
 }
 
 .div2 {
-  width: 120vh;
+  width: 100vh;
   height: 50vh;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
@@ -295,6 +298,7 @@ body {
   box-shadow: 1px 1px 20px #000000;
   padding: 10px;
   overflow: auto;
+  margin: 1vh;
 }
 
 .div3 { grid-area: 3 / 1 / 4 / 2;
@@ -509,6 +513,7 @@ body {
 .double2 {
     flex-direction: column;
     height: 100vh;
+    display: none;
 }
 
 .now {
@@ -545,9 +550,11 @@ body {
 }
 
 .now1 {
+    display: none;
     justify-content: center;
     align-items: center;
-    height: 60%;
+    height: 30%;
+    width: 60%;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     border-radius: 8px;
@@ -558,4 +565,51 @@ body {
     overflow: auto;
     margin: 0 6vh;
     transition: 0.5s;
+    top: 20px;
+}
+
+@media (max-width: 480px) { /*Для маленьких телефонів*/
+    #divBtnInp {
+        width: 80%;
+        margin: 0;
+    }
+
+    #double {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #link div a {
+        border: solid #b0b0b0;
+        border-radius: 8px;
+        width: 15vh;
+        height: 10vh;
+    }
+
+    .circle {
+        width: 15vh;
+        height: 15vh;
+    }
+
+}
+
+@media (max-width: 576px) { /* Стандартні телефони */
+
+}
+
+@media (max-width: 768px) { /* Планшети */
+
+}
+
+@media (max-width: 1024px) { /* Ноутбуки */
+
+}
+
+@media (max-width: 1200px) { /* Середні десктопи */
+
+}
+
+@media (min-width: 1201px) { /* Великі екрани */
+
 }
