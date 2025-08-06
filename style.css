@@ -274,8 +274,8 @@ body {
 }
 
 .div1 {
-  width: 40vh;
-  height: 50vh;
+  width: 50vh;
+  height: 60vh;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   border-radius: 8px;
@@ -288,8 +288,8 @@ body {
 }
 
 .div2 {
-  width: 100vh;
-  height: 50vh;
+  width: 110vh;
+  height: 60vh;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   border-radius: 8px;
@@ -510,11 +510,7 @@ body {
     transform: translateY(20px);
 }
 
-.double2 {
-    flex-direction: column;
-    height: 100vh;
-    display: none;
-}
+
 
 .now {
     height: 60%;
