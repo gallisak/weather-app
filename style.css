@@ -1,0 +1,561 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/image1.jpg);
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: "Fjalla One";
+}
+
+#enterCity1 {
+    display: flex;
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#startInput {
+    height: 8vh;
+    width: 30vh;
+    background-color: #171717;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    transition: 0.2s;
+    color: white;
+    font-size: 16px;
+    box-shadow: 1px 1px 20px #000000;
+    font-family: "Fjalla One";
+}
+
+#startBtn {
+    position: relative;
+    height: 8.1vh;
+    width: 8vh;
+    background-color: #b0b0b0;
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: 1px 1px 20px #000000;
+}
+
+#startBtn:hover {
+    background-color: #00698c;
+}
+
+
+#iconBtn {
+    position: absolute;
+    width: 5vh;
+    height: 5.1vh;
+    left: 1.5vh;
+    top: 1.5vh;
+}
+
+#divBtnInp {
+    width: 70vh;
+    height: 40vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px #000000;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 2vh;
+    font-size: 18px;
+    width: 25vh;
+    height: 8vh;
+    box-shadow: 1px 1px 20px #000000;
+    border-radius: 8px;
+    color: white;
+    backdrop-filter: blur(2px);
+    border: solid #b0b0b0;
+    transition: 0.2s;
+}
+
+.logo p {
+    margin: 5px;
+
+}
+
+#logo img {
+    width: 6vh;
+    height: 6vh;
+    margin: 5px 10px;
+}
+
+#link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2vh;
+}
+
+#link div a {
+    margin: 0 2vh;
+    border: solid #b0b0b0;
+    border-top: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 7vh;
+    border-radius: 0 0 8px 8px;
+    backdrop-filter: blur(2px);
+    transition: 0.2s;
+    box-shadow: 1px 1px 20px #000000;
+}
+
+#link div a:hover {
+    transform: translateY(-10px);
+}
+
+#link div a img {
+    width: 5vh;
+    height: 5vh;
+}
+
+
+#double {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+    color: #b0b0b0;
+}
+
+#inpCity {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 55%;
+}
+
+.hide {
+    animation: hidden 0.5s forwards;
+}
+
+@keyframes hidden {
+    from{
+        opacity: 1;
+    }   
+    to{
+        opacity: 0;
+        transform: translateY(2vh);
+    }
+}
+
+.toShow{
+    animation: show 0.5s forwards;
+}
+
+@keyframes show {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-2vh);
+    }
+}
+
+.none {
+    display: none;
+}
+
+.loading {
+    display: none;
+    height: 100%;
+    margin: 0;
+    transition: 0.2s;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.load {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    animation: loadup 0.5s forwards;
+}   
+
+@keyframes loadup {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.flex {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.flex1 {
+    display: none;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+}
+
+.circle {
+    width: 30vh;
+    height: 30vh;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+    border: 6px solid transparent;
+    border-top: 6px solid #0ff;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 0 0 20px #0ff;
+    }
+    50% {
+        box-shadow: 0 0 40px #0ff, 0 0 60px #0ff;
+    }
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 0 0 20px #0ff;
+    }
+
+}
+
+.disappearance {
+    animation: disappearancee 0.5s forwards;
+}
+
+@keyframes disappearancee {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+.parent {
+  display: flex;
+  gap: 20px; /* Відстань між блоками */
+  justify-content: center;
+  align-items: end;
+  height: 50%;
+  margin: 3vh;
+}
+
+.div1 {
+  width: 60vh;
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  border: 3px solid #3b3b3b;
+  color: white;
+  box-shadow: 1px 1px 20px #000000;
+  padding: 10px;
+  overflow: auto;
+}
+
+.div2 {
+  width: 120vh;
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  border: 3px solid #3b3b3b;
+  color: white;
+  box-shadow: 1px 1px 20px #000000;
+  padding: 10px;
+  overflow: auto;
+}
+
+.div3 { grid-area: 3 / 1 / 4 / 2;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    border: 3px solid #3b3b3b;
+    color: white;
+    box-shadow: 1px 1px 20px #000000;
+}
+
+.div4 { grid-area: 3 / 2 / 4 / 3;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    border: 3px solid #3b3b3b;
+    color: white;
+    box-shadow: 1px 1px 20px #000000;
+}
+
+.div5 { grid-area: 3 / 3 / 4 / 4;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    border: 3px solid #3b3b3b;
+    color: white;
+    box-shadow: 1px 1px 20px #000000;
+}   
+
+.div6 { grid-area: 4 / 1 / 5 / 2;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    border: 3px solid #3b3b3b;
+    color: white;
+    box-shadow: 1px 1px 20px #000000;
+}
+
+.div7 { grid-area: 4 / 2 / 5 / 3;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    border: 3px solid #3b3b3b;
+    color: white;
+    box-shadow: 1px 1px 20px #000000;
+}
+
+.div8 { grid-area: 4 / 3 / 5 / 4;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    border: 3px solid #3b3b3b;
+    color: white;
+    box-shadow: 1px 1px 20px #000000;
+}
+
+.show-block {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.hide-block {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.parentNew {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    height: 80%;
+    width: 100%;
+}
+
+.div1New, .div2New, .div3New, .div4New, .div5New {
+    display: flex;
+    justify-content: space-between;
+    margin: 1px 10px;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.selectEl {
+    border-left: 4px solid rgb(0, 98, 140);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0 8px 8px 0;
+}
+
+.div1New:hover,
+.div2New:hover,
+.div3New:hover,
+.div4New:hover,
+.div5New:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0 8px 8px 0;
+}
+
+.parentNew2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.div11New { grid-area: 5 / 1 / 6 / 2; 
+    border-top: 2px solid #b0b0b0;
+}
+
+.div12New { grid-area: 5 / 2 / 6 / 3; 
+    border-top: 2px solid #b0b0b0;
+}
+
+.div13New { grid-area: 5 / 3 / 6 / 4; 
+    border-top: 2px solid #b0b0b0;
+}
+
+.div14New { grid-area: 5 / 4 / 6 / 5; 
+    border-top: 2px solid #b0b0b0;
+}
+
+.div15New { grid-area: 5 / 5 / 6 / 6; 
+    border-top: 2px solid #b0b0b0;
+}
+
+.div16New { grid-area: 5 / 6 / 6 / 7; 
+    border-top: 2px solid #b0b0b0;
+}
+
+.div17New { grid-area: 5 / 7 / 6 / 8; 
+    border-top: 2px solid #b0b0b0;
+}
+
+.div18New { grid-area: 5 / 8 / 6 / 9; 
+    border-top: 2px solid #b0b0b0;
+}
+
+.div19New { grid-area: 4 / 1 / 5 / 2; 
+
+}
+
+.div110New { grid-area: 4 / 2 / 5 / 3; 
+
+}
+
+.div111New { grid-area: 4 / 3 / 5 / 4; 
+
+}
+
+.div112New { grid-area: 4 / 4 / 5 / 5; 
+
+}
+
+.div113New { grid-area: 4 / 5 / 5 / 6; 
+
+}
+
+.div114New { grid-area: 4 / 6 / 5 / 7; 
+
+}
+
+.div115New { grid-area: 4 / 7 / 5 / 8; 
+
+}
+
+.div116New { grid-area: 4 / 8 / 5 / 9; 
+
+}
+
+.div117New { grid-area: 1 / 1 / 4 / 9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fjalla One";
+    font-size: 25px;
+}
+
+.div11New, .div12New, .div13New, .div14New, .div15New, .div16New, .div17New, .div18New {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.div11New.show-block, .div12New.show-block, .div13New.show-block, .div14New.show-block,
+.div15New.show-block, .div16New.show-block, .div17New.show-block, .div18New.show-block {
+    opacity: 1;
+    transform: translateY(0);
+}
+.div11New.hide-block, .div12New.hide-block, .div13New.hide-block, .div14New.hide-block,
+.div15New.hide-block, .div16New.hide-block, .div17New.hide-block, .div18New.hide-block {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.div117New {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.div117New.show-block {
+    opacity: 1;
+    transform: translateY(0);
+}
+.div117New.hide-block {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.double2 {
+    flex-direction: column;
+    height: 100vh;
+}
+
+.now {
+    height: 60%;
+    width: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.now p {
+    margin: 2px;
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.ananas {
+    font-size: 40px;
+}
+
+.kaban {
+    font-size: 30px;
+}
+
+.description {
+    font-size: 15px;
+}
+
+.feelsLike {
+    font-size: 15px;
+    color: #b0b0b0;
+}
+
+.now1 {
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    border: 3px solid #3b3b3b;
+    color: white;
+    box-shadow: 1px 1px 20px #000000;
+    padding: 10px;
+    overflow: auto;
+    margin: 0 6vh;
+    transition: 0.5s;
+}
