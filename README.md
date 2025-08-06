@@ -27,6 +27,6 @@ A simple weather application built with HTML, CSS, and JavaScript. Users can sea
 ## 📦 Run Locally
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/gallisak/weather-app.git
 cd weather-app
 open index.html in your browser
