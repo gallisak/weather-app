@@ -564,10 +564,18 @@ body {
     top: 20px;
 }
 
-@media (max-width: 390px) { /*Для маленьких телефонів*/
+@media (min-width: 351px) and (max-width: 400px) { /*Для маленьких телефонів*/
     #divBtnInp {
         width: 80%;
         margin: 0;
+    }
+
+    .loading {
+        height: 140vh;
+    }
+
+    #enterCity1 {
+        height: 50vh;
     }
 
     #double {
@@ -580,8 +588,12 @@ body {
     #link div a {
         border: solid #b0b0b0;
         border-radius: 8px;
-        width: 15vh;
+        width: 10vh;
         height: 10vh;
+    }
+
+    .loading{
+        height: 100vh;
     }
 
     .circle {
@@ -590,7 +602,7 @@ body {
     }
 
     .now1 {
-        width: 100%;
+        width: 90%;
         height: max-content;
     }
 
@@ -611,7 +623,7 @@ body {
         overflow: hidden;
         position: relative;
         max-width: 300px;
-        height: max-content;
+        height: 300px;
         
     }
 
@@ -640,7 +652,7 @@ body {
 
 }
 
-@media (max-width: 431px) { /* Стандартні телефони */
+@media (min-width: 401px) and (max-width: 500px) { /* Стандартні телефони */
 
     #divBtnInp {
         width: 90%;
@@ -658,7 +670,7 @@ body {
         border: solid #b0b0b0;
         border-radius: 8px;
         width: 10vh;
-        height: 8vh;
+        height: 10vh;
     }
 
     #enterCity1 {
@@ -724,15 +736,166 @@ body {
 
 }
 
-@media (max-width: 768px) { /* Планшети */
+@media (min-width: 500px) and (max-width: 769px) { /* Планшети */
+    
+    #link div a {
+        width: 10vh;
+        height: 15vh;
+    }
+
+    #enterCity1 {
+        height: 50dvh;
+    }
+
+    .loading {
+        height: 130vh;
+    }
+
+    #divBtnInp {
+        height: 30vh;
+    }
+
+    .circle {
+        height: 20vh;
+        width: 20vh;
+    }
+
+    .loading {
+        height: 75dvh;
+    }
+
+    .parent {
+        width: 100%;
+    }
+
+    .vav {
+        width: 100%;
+    }
+
+    .div1 {
+        width: 100%;
+        height: max-content;
+    }
+
+    .div2 {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        max-width: 300px;
+        height: 100%;
+    }
+
+    .parentNew2 {
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding: 10px;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+
+    .div11New, .div12New, .div13New, .div14New, .div15New, .div16New, .div17New, .div18New {
+        min-width: 150px;
+        height: max-content;
+    }
+
+    .div117New {
+        height: max-content;
+    }
+
+    .parentNew2 {
+        max-height: 300px;
+    }
 
 }
 
-@media (max-width: 1024px) { /* Ноутбуки */
+@media (min-height: 1025px) and (max-width: 1025px) { /* Айпади */
+
+    #link div a {
+        width: 7vh;
+        height: 15vh;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    #enterCity1 {
+        height: 30dvh;
+        margin: 2vh;
+    }
+
+    #startInput {
+        font-size: 30px;
+    }
+
+    #divBtnInp {
+        height: 30vh;
+    }
+
+    .circle {
+        height: 20vh;
+        width: 20vh;
+    }
+
+    .loading {
+        height: 60dvh;
+    }
+
+    .parent {
+        width: 100%;
+    }
+
+    .vav {
+        width: 100%;
+        height: 100%;
+    }
+
+    .div1 {
+        width: 100%;
+        height: max-content;
+    }
+
+    .div2 {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        max-width: 300px;
+        height: 100%;
+    }
+
+    .parentNew2 {
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding: 10px;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+
+    .div11New, .div12New, .div13New, .div14New, .div15New, .div16New, .div17New, .div18New {
+        min-width: 150px;
+        height: max-content;
+    }
+
+    .div117New {
+        height: max-content;
+    }
+
+    .parentNew2 {
+        max-height: 300px;
+    }
+
 
 }
 
-@media (max-width: 1200px) { /* Середні десктопи */
+@media (min-width: 1201px) and (max-width: 1200px) { /* Середні десктопи */
+
+
 
 }
 
@@ -749,6 +912,17 @@ body {
         position: relative;
         max-width: 300px;
         height: 500px;
+    }
+
+    #double {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #enterCity1 {
+        height: 50vh;
     }
 
     .now1 {
@@ -768,13 +942,68 @@ body {
         gap: 8px;
     }
 
-    #link div a {
-        width: 80px !important;
-        height: 60px !important;
+    .circle {
+        width: 15vh;
+        height: 15vh;
     }
 
-    .div11New, .div12New, .div18New {
-        min-width: 120px;
+    .loading {
+        height: 80dvh;
+    }
 
+    #link div a {
+        width: 60px;
+        height: 60px;
+        border: solid #b0b0b0;
+        border-radius: 8px;
+    }
+
+    .now1 {
+        width: 90%;
+        height: max-content;
+    }
+
+    .vav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div1 {
+        width: 100%;
+        height: max-content;
+    }
+
+    .div2 {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        max-width: 300px;
+        height: 500px;
+        
+    }
+
+    .parentNew2 {
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding: 10px;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+
+    .div11New, .div12New, .div13New, .div14New, .div15New, .div16New, .div17New, .div18New {
+        min-width: 150px;
+        height: max-content;
+    }
+
+    .div117New {
+        height: max-content;
+    }
+
+    .parentNew2 {
+        max-height: 300px;
     }
 }
