@@ -153,7 +153,7 @@ startBtn.addEventListener("click", function() {
                         setTimeout(() => {
                             block.classList.remove("hide-block");
                             block.classList.add("show-block");
-                        }, 50 * i);
+                        }, 20 * i);
                     });
                 }, 100);
             }, 1000);

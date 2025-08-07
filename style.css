@@ -564,7 +564,7 @@ body {
     top: 20px;
 }
 
-@media (max-width: 480px) { /*Для маленьких телефонів*/
+@media (max-width: 390px) { /*Для маленьких телефонів*/
     #divBtnInp {
         width: 80%;
         margin: 0;
@@ -574,6 +574,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     #link div a {
@@ -588,9 +589,138 @@ body {
         height: 15vh;
     }
 
+    .now1 {
+        width: 100%;
+        height: max-content;
+    }
+
+    .vav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div1 {
+        width: 100%;
+        height: max-content;
+    }
+
+    .div2 {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        max-width: 300px;
+        height: max-content;
+        
+    }
+
+    .parentNew2 {
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding: 10px;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+
+    .div11New, .div12New, .div13New, .div14New, .div15New, .div16New, .div17New, .div18New {
+        min-width: 150px;
+        height: max-content;
+    }
+
+    .div117New {
+        height: max-content;
+    }
+
+    .parentNew2 {
+        max-height: 300px;
+    }
+
 }
 
-@media (max-width: 576px) { /* Стандартні телефони */
+@media (max-width: 431px) { /* Стандартні телефони */
+
+    #divBtnInp {
+        width: 90%;
+        margin: 0;
+    }
+
+    #double {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #link div a {
+        border: solid #b0b0b0;
+        border-radius: 8px;
+        width: 10vh;
+        height: 8vh;
+    }
+
+    #enterCity1 {
+        height: 50dvh;
+    }
+
+    .circle {
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .now1 {
+        width: 90%;
+        height: max-content;
+    }
+
+    .vav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loading {
+        height: 90dvh;
+    }
+
+    .div1 {
+        width: 100%;
+        height: max-content;
+    }
+
+    .div2 {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        max-width: 300px;
+        height: 500px;
+    }
+
+    .parentNew2 {
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding: 10px;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+
+    .div11New, .div12New, .div13New, .div14New, .div15New, .div16New, .div17New, .div18New {
+        min-width: 150px;
+        height: max-content;
+    }
+
+    .div117New {
+        height: max-content;
+    }
+
+    .parentNew2 {
+        max-height: 300px;
+    }
 
 }
 
@@ -608,4 +738,43 @@ body {
 
 @media (min-width: 1201px) { /* Великі екрани */
 
+}
+
+/* Для Samsung Z Fold */
+@media (max-width: 400px) and (min-height: 800px) {
+    .div2 {
+        width: 100%;
+        max-width: 100%;
+        overflow: auto;
+        position: relative;
+        max-width: 300px;
+        height: 500px;
+    }
+
+    .now1 {
+        width: 90%;
+    }
+
+    .parent {
+        width: 344px;
+    }
+
+    .div1 {
+        width: 90%;
+    }
+
+    .parentNew2 {
+        min-width: 100%;
+        gap: 8px;
+    }
+
+    #link div a {
+        width: 80px !important;
+        height: 60px !important;
+    }
+
+    .div11New, .div12New, .div18New {
+        min-width: 120px;
+
+    }
 }
